@@ -2,16 +2,16 @@
 
 众合桌面 AI 助手的公开制品仓库。此仓库提供安装包、签名更新包和更新清单；应用源码保存在私人开发仓库。
 
-macOS Apple Silicon 当前测试版为 [0.1.19](https://github.com/asd8237731/zhonghebot-releases/releases/tag/v0.1.19)。Windows x64 仍提供现有 0.1.11 测试安装包。
+macOS Apple Silicon 当前测试版为 [0.1.20](https://github.com/asd8237731/zhonghebot-releases/releases/tag/v0.1.20)。Windows x64 仍提供现有 0.1.11 测试安装包。
 
 | 平台 | 安装包 | 安装要求 |
 | --- | --- | --- |
-| macOS Apple Silicon | [下载 0.1.19 ARM64 DMG](https://github.com/asd8237731/zhonghebot-releases/releases/download/v0.1.19/MochiBot_0.1.19_aarch64.dmg) | Apple Silicon Mac，macOS 12 或更高版本 |
+| macOS Apple Silicon | [下载 0.1.20 ARM64 DMG](https://github.com/asd8237731/zhonghebot-releases/releases/download/v0.1.20/MochiBot_0.1.20_aarch64.dmg) | Apple Silicon Mac，macOS 12 或更高版本 |
 | Windows x64 | [下载 0.1.11 NSIS 安装器](https://github.com/asd8237731/zhonghebot-releases/releases/download/v0.1.11/MochiBot_0.1.11_x64-setup.exe) | Windows x64，验证范围见对应发行说明 |
 
-0.1.19 增加当前聊天技能 ZIP 检查、向真实机器人安装／分配技能，以及主助手部门和群聊管理；审批后保存真实结果和收据，支持符合条件的撤回。修复 Codex MCP 单次工具审批和轮次归属。创建、安装不会自动执行技能脚本，也不代表视频任务已完成。完整变化与验收范围见[发行说明](https://github.com/asd8237731/zhonghebot-releases/releases/tag/v0.1.19)。
+0.1.20 完善技能目录、SKILL.md、ZIP、Markdown、GitHub 和 HTTPS 来源识别、安装预览与目标绑定，保留完整脚本及资源，提供具体错误和持久撤回记录。修复 Codex 停止后部分原聊天无法继续的问题；确实不明的外部操作仍保留核查，不自动重发。安装技能不会执行包内脚本，也不代表依赖就绪或视频任务已完成。完整变化与验收范围见[发行说明](https://github.com/asd8237731/zhonghebot-releases/releases/tag/v0.1.20)。
 
-升级前请导出备份。本版在主库 schema 13、扩展库 schema 3 下增加组织状态、收据表和触发器；schema 版本不变不代表旧应用可直接读取。回退须恢复升级前备份，勿让旧版本直接打开升级后的数据库。
+升级前请导出备份。本版保留主库 schema 13、扩展库 schema 3；包含此前新增的组织状态、收据表和触发器，schema 版本不变不代表旧应用可直接读取。回退须恢复升级前备份，勿让旧版本直接打开升级后的数据库。
 
 macOS 应用内更新使用[固定更新清单](https://github.com/asd8237731/zhonghebot-releases/releases/latest/download/latest.json)，当前提供 Mac 制品。旧版若持续显示“更新连接失败”，请手动下载本页 DMG，退出应用后替换完整 MochiBot.app 一次。保留 0.1.18 的 macOS 静态 HTTPS 系统代理支持、超时与来源分类；PAC、自动发现和仅 SOCKS 系统配置未新增支持。
 
